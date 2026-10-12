@@ -1,9 +1,11 @@
 import styles from './Footer.module.css'
 import RohapediaLogo from '../Logo/RohapediaLogo'
 
-const SOCIALS = [
+const SOCIALS: { label: string; url: string | null }[] = [
   { label: 'YouTube',   url: 'https://www.youtube.com/@rohapedia'  },
   { label: 'Instagram', url: 'https://www.instagram.com/rohapedia' },
+  { label: 'Facebook',  url: null },
+  { label: 'TikTok',    url: null },
 ]
 
 export default function Footer() {
@@ -27,17 +29,27 @@ export default function Footer() {
 
         {/* Socials */}
         <nav className={styles.socials} aria-label="Social media links">
-          {SOCIALS.map(({ label, url }) => (
-            <a
-              key={label}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialLink}
-            >
-              {label}
-            </a>
-          ))}
+          {SOCIALS.map(({ label, url }) =>
+            url ? (
+              <a
+                key={label}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+              >
+                {label}
+              </a>
+            ) : (
+              <span
+                key={label}
+                className={`${styles.socialLink} ${styles.socialLinkDisabled}`}
+                title="Coming soon"
+              >
+                {label}
+              </span>
+            )
+          )}
         </nav>
       </div>
 

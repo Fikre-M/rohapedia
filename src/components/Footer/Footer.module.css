@@ -80,6 +80,12 @@
   color: var(--gold);
 }
 
+.socialLinkDisabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .bottom {
   max-width: 1200px;
   margin: 36px auto 0;
