@@ -1,0 +1,82 @@
+.section {
+  background-color: var(--highland-green);
+  padding: 100px 5%;
+  text-align: center;
+}
+
+.inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.subhead {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 24px;
+}
+
+.descEn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.descAm {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.platformBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 22px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.platformBtn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.note {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 600px) {
+  .section { padding: 72px 5%; }
+}

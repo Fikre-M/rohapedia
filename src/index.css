@@ -1,0 +1,64 @@
+/* =============================================
+   CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+============================================= */
+:root {
+  --stone-black:    #1A1410;
+  --parchment:      #F7F2EA;
+  --gold:           #C9A84C;
+  --gold-light:     #E8D5A0;
+  --highland-green: #2D5016;
+  --terracotta:     #8B3A1E;
+  --card-bg:        #FEFCF8;
+  --muted-text:     #8C7B6A;
+  --body-text:      #2C2318;
+  --mist:           #EDE8DF;
+}
+
+/* =============================================
+   RESET & BASE
+============================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--parchment);
+  color: var(--body-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}

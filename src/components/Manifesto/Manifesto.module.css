@@ -1,0 +1,43 @@
+.section {
+  background-color: var(--mist);
+  padding: 100px 5%;
+  text-align: center;
+}
+
+.inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.quoteEn {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--body-text);
+  line-height: 1.55;
+}
+
+.quoteEn em {
+  color: var(--terracotta);
+  font-style: italic;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 32px auto;
+}
+
+.quoteAm {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 400;
+  color: var(--muted-text);
+  line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+  .section { padding: 72px 5%; }
+}

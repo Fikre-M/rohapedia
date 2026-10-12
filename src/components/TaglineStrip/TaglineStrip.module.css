@@ -1,0 +1,13 @@
+.strip {
+  background-color: var(--gold);
+  padding: 18px 5%;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+  font-style: italic;
+  color: var(--stone-black);
+  letter-spacing: 0.02em;
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- circle background -->
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#d6e8f0"/>
+      <stop offset="100%" stop-color="#b8c8d8"/>
+    </radialGradient>
+    <clipPath id="cc"><circle cx="16" cy="18" r="12"/></clipPath>
+  </defs>
+  <circle cx="16" cy="18" r="12" fill="url(#sky)"/>
+  <!-- mountains -->
+  <path d="M4 26 L8 20 L11 23 L14 17 L17 22 L20 17 L23 22 L27 18 L28 24 L28 30 L4 30 Z"
+        fill="#7a2a22" clip-path="url(#cc)"/>
+  <!-- R -->
+  <text x="16" y="26" text-anchor="middle" font-family="serif" font-size="14"
+        font-weight="700" fill="#ffffff">R</text>
+  <!-- circle border -->
+  <circle cx="16" cy="18" r="12" fill="none" stroke="#c8d4dc" stroke-width="0.8"/>
+  <!-- crown (simplified) -->
+  <path d="M10 13 L11 9 L13 11 L16 7 L19 11 L21 9 L22 13 Q16 11.5 10 13 Z"
+        fill="#c9a030"/>
+  <circle cx="11" cy="8.8" r="1.1" fill="#f0d060"/>
+  <circle cx="16" cy="6.8" r="1.1" fill="#f0d060"/>
+  <circle cx="21" cy="8.8" r="1.1" fill="#f0d060"/>
+</svg>

@@ -1,0 +1,104 @@
+.footer {
+  background-color: var(--stone-black);
+  border-top: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 52px 5%;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.logoSvg {
+  overflow: visible;
+  margin-bottom: 4px;
+}
+
+.logoEn {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+
+.logoAm {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-top: 2px;
+}
+
+.tagline {
+  text-align: center;
+}
+
+.taglineEn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.taglineAm {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 6px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.socialLink:hover {
+  color: var(--gold);
+}
+
+.bottom {
+  max-width: 1200px;
+  margin: 36px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.bottom p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 28px;
+  }
+  .socials { justify-content: center; }
+}

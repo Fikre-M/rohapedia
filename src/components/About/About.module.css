@@ -1,0 +1,151 @@
+.section {
+  background-color: var(--stone-black);
+  padding: 100px 5%;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TEXT SIDE */
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+
+.sectionLabel::before {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+.headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 28px;
+}
+
+.headline em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.paragraph {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.paragraphAm {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(232, 213, 160, 0.7);
+  line-height: 2;
+  border-top: 1px solid var(--gold);
+  padding-top: 20px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.goldText {
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+/* STATS SIDE */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.statCard {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 24px;
+}
+
+.statNumber {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.statLabelEn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2px;
+}
+
+.statLabelAm {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(201, 168, 76, 0.6);
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.statNumberSm {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.statWideAm {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.statWideEn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section { padding: 72px 5%; }
+  .statsRow { grid-template-columns: 1fr; }
+}

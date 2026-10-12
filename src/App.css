@@ -1,0 +1,5 @@
+/* App-level resets — component styles live in their own .module.css files */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
