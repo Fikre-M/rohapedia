@@ -9,8 +9,6 @@ interface Platform {
 const PLATFORMS: Platform[] = [
   { emoji: '▶',  label: 'YouTube',   url: 'https://www.youtube.com/@rohapedia'   },
   { emoji: '📷', label: 'Instagram', url: 'https://www.instagram.com/rohapedia'  },
-  { emoji: '📘', label: 'Facebook',  url: 'https://www.facebook.com/rohapedia'   },
-  { emoji: '🎵', label: 'TikTok',    url: 'https://www.tiktok.com/@rohapedia'    },
 ]
 
 export default function Subscribe() {

@@ -4,8 +4,6 @@ import RohapediaLogo from '../Logo/RohapediaLogo'
 const SOCIALS = [
   { label: 'YouTube',   url: 'https://www.youtube.com/@rohapedia'  },
   { label: 'Instagram', url: 'https://www.instagram.com/rohapedia' },
-  { label: 'Facebook',  url: 'https://www.facebook.com/rohapedia'  },
-  { label: 'TikTok',    url: 'https://www.tiktok.com/@rohapedia'   },
 ]
 
 export default function Footer() {
